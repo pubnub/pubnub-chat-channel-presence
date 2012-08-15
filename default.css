@@ -292,13 +292,12 @@ body {
     right: 3px;
     width: 140px;
     height: 36px;
-    background: rgba(0,255,255,0.8) url(chat-icon.png) no-repeat 22px 7px;
-    border: 2px solid rgba(255,255,255,0.3);;
+    background: rgba(0,255,255,0.8) url(chat-icon.png) no-repeat 102px 7px;
+    border: 2px solid rgba(255,255,255,0.3);
     border-radius: 9px;
     color: #fff;
     font-weight: 700;
     font-size: 15px;
-    padding-left: 22px;
     box-shadow: -8px 0px 12px 0px rgba(0,0,0,0.1);
 }
 .chat-box-button:hover {
@@ -309,11 +308,12 @@ body {
 }
 
 #chat-box-user-icon {
-    top: 10px;
-    left: 606px;
+    border: 0;
+    top: 8px;
+    left: 460px;
     right: 20px;
-    width: 20px;
-    height: 20px;
+    width: 27px;
+    height: 27px;
 }
 
 .chat-box-output {

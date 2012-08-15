@@ -60,7 +60,7 @@ p.bind( 'click', anonymous, function() {
 function set_current_user(user) {
     if (user.uuid !== UUID) return;
     p.css( p.$('chat-box-user-icon'), {
-        'background-image' : 'url('+user.profile_image_url+')'
+        'backgroundImage' : 'url('+user.profile_image_url+')'
     } );
 }
 
