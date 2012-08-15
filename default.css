@@ -292,13 +292,15 @@ body {
     right: 3px;
     width: 140px;
     height: 36px;
-    background: rgba(0,255,255,0.8) url(chat-icon.png) no-repeat 102px 7px;
+    background: rgba(0,255,255,0.8) url(chat-icon.png) no-repeat 90px 7px;
     border: 2px solid rgba(255,255,255,0.3);
     border-radius: 9px;
     color: #fff;
     font-weight: 700;
     font-size: 15px;
     box-shadow: -8px 0px 12px 0px rgba(0,0,0,0.1);
+    text-align: left;
+    padding-left: 40px;
 }
 .chat-box-button:hover {
     background-color: rgba(100,255,255,0.9)
