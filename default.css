@@ -1,0 +1,391 @@
+body {
+    background: #fff;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#overlay {
+    z-index: 100;
+    background: url(chat-overlay.png);
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    width: 1024px;
+    height: 768px;
+}
+
+/* TWITTER */
+#twitter-login {
+    z-index: 150;
+    position: absolute;
+    top: 300px;
+    left: 267px;
+    background: #fff;
+    border-radius: 40px;
+}
+#twitter-login-button {
+    cursor: pointer;
+    margin: 20px;
+    width: 450px;
+    height: 72px;
+    background: url(sign-in-with-twitter.png);
+}
+#anonymous-login {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: underline;
+    color: #3ae;
+    font-family: "Open Sans";
+    margin-bottom: 20px;
+}
+
+#main {
+    z-index: 50;
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    position: relative;
+    overflow: hidden;
+
+    width: 1024px;
+    height: 768px;
+
+    background: #fefef2 url(chat-bg.jpg) no-repeat;
+
+    color: #ffe;
+    font-size: 15px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.circle-header, .circle-header-icon {
+    position: absolute;
+    overflow: hidden;
+    top: 16px;
+    left: 22px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 100px;
+    background: #f2f;
+    width: 31px;
+    height: 31px;
+}
+
+.circle-header-one   { background: #f0f }
+.circle-header-two   { background: #f90 }
+.circle-header-three { background: #0ff }
+
+.circle-header-icon       { }
+.circle-header-icon-one   {
+    background: transparent url(flag-icon.png) no-repeat 6px 6px
+}
+.circle-header-icon-two   {
+    background: transparent url(users-icon.png) no-repeat 5px 5px
+}
+.circle-header-icon-three {     
+    background: transparent url(chat-icon.png) no-repeat 6px 6px
+}
+
+.circle-header-text {
+    position: absolute;
+    top: 23px;
+    left: 66px;
+    letter-spacing: -1px;
+    font-size: 20px;
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+
+}
+.section {
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    width: 347px;
+    height: 406px;
+}
+.section-one {
+    
+}
+.section-two {
+    top: 407px;
+    width: 347px;
+    height: 360px;
+}
+.section-three {
+    left: 347px;
+    width: 677px;
+    height: 768px;
+}
+.time {
+    position: absolute;
+    top: 52px;
+    left: 70px;
+    font-size: 90px;
+    font-family: "Source Sans Pro";
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+.time sup { font-size: 37px }
+.time-line {
+    position: absolute;
+    top: 166px;
+    left: 22px;
+    font-size: 0px;
+    line-height: 0px;
+    height: 3px;
+    background: rgba(255,255,255,0.4);
+    width: 300px;
+}
+
+/* UPDATES */
+.update-area {
+    position: absolute;
+    top: 180px;
+    left: 22px;
+}
+.update-item {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.update-time,
+.chat-box-message-time {
+    display: inline-block;
+    width: 100px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.update-time sup,
+.chat-box-message-time sup {
+    font-size: 10px;
+    font-weight: 400;
+}
+.update-line {
+    font-size: 0px;
+    line-height: 0px;
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    width: 300px;
+    margin: 10px 0;
+}
+
+
+/* PEOPLE */
+#list-of-people {
+    position: absolute;
+    top: 53px;
+    left: 20px;
+    width: 300px;
+    height: 300px;
+}
+.person {
+    height: 52px;
+    width: 300px;
+}
+.person-line {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    height: 20px;
+    width: 2px;
+    background: rgba(255,255,255,0.5);
+}
+.person-name {
+    position: absolute;
+    top: 24px;
+    left: 45px;
+    height: 20px;
+    width: 300px;
+}
+.person-picture, 
+#chat-box-user-icon {
+    position: absolute;
+    overflow: hidden;
+    top: 20px;
+    left: 5px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 100px;
+    background: #555;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    -ms-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    -o-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+.person-offline {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* TALK */
+.chat-box-area-inset,
+.chat-box-area {
+    position: absolute;
+    overflow: hidden;
+    top: 100px;
+    left: 20px;
+
+    background: rgba(0,0,0,0.4);
+
+    width: 640px;
+    height: 42px;
+
+    border: 2px solid rgba(255,255,255,0.4);
+    border-radius: 12px;
+
+    -webkit-box-shadow: 1px 8px 20px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 1px 8px 20px 2px rgba(0,0,0,0.1);
+    -ms-box-shadow: 1px 8px 20px 2px rgba(0,0,0,0.1);
+    -o-box-shadow: 1px 8px 20px 2px rgba(0,0,0,0.1);
+    box-shadow: 1px 8px 20px 2px rgba(0,0,0,0.1);
+}
+.chat-box-area-inset {
+    top: 0;
+    left: 0;
+    border: 0;
+    background: transparent;
+    -webkit-box-shadow: inset 1px 8px 20px 2px rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 1px 8px 20px 2px rgba(0,0,0,0.8);
+    -ms-box-shadow: inset 1px 8px 20px 2px rgba(0,0,0,0.8);
+    -o-box-shadow: inset 1px 8px 20px 2px rgba(0,0,0,0.8);
+    box-shadow: inset 1px 8px 20px 2px rgba(0,0,0,0.8);
+}
+.chat-box-input {
+    outline: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+
+    background: transparent;
+    border: 0;
+
+    width: 480px;
+    height: 20px;
+    font-size: 18px;
+    color: #fefef2;
+}
+.chat-box-button {
+    cursor: pointer;
+    outline: 0;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 140px;
+    height: 36px;
+    background: rgba(0,255,255,0.8) url(chat-icon.png) no-repeat 22px 7px;
+    border: 2px solid rgba(255,255,255,0.3);;
+    border-radius: 9px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 22px;
+    box-shadow: -8px 0px 12px 0px rgba(0,0,0,0.1);
+}
+.chat-box-button:hover {
+    background-color: rgba(100,255,255,0.9)
+}
+.chat-box-button:active {
+    background-color: rgba(255,200,200,0.9)
+}
+
+#chat-box-user-icon {
+    top: 10px;
+    left: 606px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.chat-box-output {
+    position: absolute;
+    overflow: hidden;
+    top: 200px;
+    left: 20px;
+
+    width: 640px;
+    height: 568px;
+}
+.chat-box-person {
+    width: 640px;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+.chat-box-person-line {
+    font-size: 0px;
+    line-height: 0px;
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    width: 640px;
+    margin: 10px 0;
+}
+
+.chat-box-message {
+    float: left;
+    font-size: 17px;
+    font-weight: 500;
+    width: 440px;
+}
+.chat-box-message-name {
+    float: left;
+    width: 130px;
+    font-weight: 700;
+}
+.chat-box-message-time {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    text-align: right;
+}
+
+/* UTILITY */
+.relative { position: relative }
+.clear { clear: both }
+
+/* FOOTER AREA */
+#footer-area {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 1024px;
+    height: 100px;
+    background: url(chat-bg-bottom.png);
+}
+.pubnub-logo {
+    background: url(pubnub-logo.png);
+    width: 116px;
+    height: 26px;
+}
+.pubnub-logo-top,
+.pubnub-logo-bottom {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    font-weight: 200;
+    font-family: "Source Sans Pro";
+    text-align: right;
+    opacity: 0.9;
+}
+.pubnub-logo-bottom {
+    top: 56px;
+    opacity: 0.2;
+}

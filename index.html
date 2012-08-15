@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>PubNub Presence</title>
+        <link rel=stylesheet href=default.css>
+        <link href=http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400|Open+Sans:400,500,700 rel=stylesheet>
+    </head>
+    <body>
+        <div id=overlay></div>
+        <div id=twitter-login>
+            <div id=twitter-login-button></div>
+            <div
+                id=anonymous-login
+                accounts=pubnub,twitter,billgates,stephenlb
+            > - Skip - </div>
+        </div>
+
+        <div id=main>
+            <!-- UPDATES -->
+            <div class="section section-one"><div class=relative>
+                <div class="circle-header circle-header-one"></div>
+                <div class=circle-header-text>Updates</div>
+                <div class="circle-header-icon circle-header-icon-one"></div>
+
+                <div class=time id=time>00:00<sup>pm</sup></div>
+                <div class=time-line></div>
+
+                <div id=update-area class=update-area><div></div></div>
+            </div></div>
+
+            <!-- Person Template -->
+            <script id=update-template type=template>
+                <div class=update-item>
+                    <span class=update-time>{time}</span>
+                    {name} {message}
+                </div>
+                <div class=update-line></div>
+            </script>
+
+            <!-- PEOPLE -->
+            <div class="section section-two"><div class=relative>
+                <div class="circle-header circle-header-two"></div>
+                <div class=circle-header-text>
+                    PEOPLE ( <span id=people-online>2</span> )
+                </div>
+                <div class="circle-header-icon circle-header-icon-two"></div>
+
+                <!-- List of People -->
+                <div id=list-of-people><div></div></div>
+            </div></div>
+
+            <!-- Person Template -->
+            <script id=person-template type=template>
+                <div class=person uuid={uuid}><div class=relative>
+                    <div class=person-line></div>
+                    <div
+                        class="person-picture person-{status}"
+                        style="background-image:url({bg})"
+                    ></div>
+                    <div class=person-name>{name} ({status})</div>
+                </div></div>
+            </script>
+
+            <!-- CHAT / TALK -->
+            <div class="section section-three"><div class=relative>
+                <div class="circle-header circle-header-three"></div>
+                <div class=circle-header-text>Talk</div>
+                <div class="circle-header-icon circle-header-icon-three"></div>
+
+                <!-- Chat Box -->
+                <div class=chat-box-area>
+                <div class=chat-box-area-inset>
+                <div class=relative>
+                    <input
+                        id=chat-input
+                        class=chat-box-input
+                        placeholder=chat
+                    >
+                    <button
+                        id=chat-button
+                        class=chat-box-button
+                    >Send</button>
+                    <div id=chat-box-user-icon></div>
+                </div>
+                </div>
+                </div>
+
+                <!-- Chat Content Area -->
+                <div
+                    id=talk-box-output
+                    class=chat-box-output
+                ><div></div></div>
+            </div></div>
+
+            <!-- Chat Message Template -->
+            <script id=chat-message-template type=template>
+                <div class=chat-box-person
+                     name="{name}"
+                     time="{time}"
+                     join="{name}-{time}"
+                     clock="{clock}"
+                ><div class=relative>
+                    <div class=chat-box-message-name>{name}</div>
+                    <div class=chat-box-message-time>{time}</div>
+                    <div class=chat-box-message msg-line=1>{message}</div>
+                    <div class=clear></div>
+                    <div class=chat-box-person-line></div>
+                </div></div>
+            </script>
+
+            <script id=default-user>[{"id":152773076,"location":"San Francisco, CA","profile_image_url":"http://a0.twimg.com/profile_images/1378888018/pubnub-icon_normal.png","statuses_count":1999,"utc_offset":-28800,"profile_image_url_https":"https://si0.twimg.com/profile_images/1378888018/pubnub-icon_normal.png","name":"PubNub Anonymous","screen_name":"PubNub Anonymous","friends_count":5135,"listed_count":131,"description":"We provide a web-service API for businesses to build scalable Data Push communication apps on Mobile, Tablet and Web.","followers_count":19456,"url":"http://www.PubNub.com","created_at":"Sun Jun 06 21:03:46 +0000 2010","time_zone":"Pacific Time (US & Canada)","id_str":"152773076","id":233978616650817538,"favourites_count":607}]</script>
+
+
+            <!-- PubNub Logos -->
+            <div id=footer-area><div class=relative>
+                <div class=pubnub-logo-bottom>
+                    <div class=pubnub-logo></div>
+                </div>
+            </div></div>
+            <div class=pubnub-logo-top>
+                <div class=pubnub-logo></div>
+                powered by
+            </div>
+        </div>
+
+        <script src="http://platform.twitter.com/anywhere.js?id=BzYvXg6GrhgJQUHPe62vrg&v=1"></script>
+        <script src=pubnub-3.2.js></script>
+        <script src=animate.js></script>
+        <script src=sound.js></script>
+        <script src=chat.js></script>
+    </body>
+</html>
