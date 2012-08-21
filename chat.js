@@ -355,7 +355,7 @@ function supplant( d, t, o ) { d.innerHTML = p.supplant( t, o ) }
 
 // --------------------------------------------------------------------------
 // 
-// CHAT BIND CONTROL
+// READY FUNCTION
 // 
 // --------------------------------------------------------------------------
 function ready(user) {
