@@ -1,3 +1,13 @@
+
+// --------------------------------------------------------------------------
+// 
+// PubNub Channel Presence!
+// 
+// http://twitter.com/pubnub - let's be friends.
+// 
+// --------------------------------------------------------------------------
+
+
 (function(){
 
 var p               = PUBNUB
@@ -404,10 +414,12 @@ function ready(user) {
             'presence-user-' + details.action, uuid
         );
 
+        // Here Now (only)
         if ('uuids' in details) p.each( details.uuids, function(uuid) {
             p.events.fire( 'presence-user-join', uuid.toLowerCase() );
         } );
 
+        // Here Now (too)
         online.innerHTML = 'occupancy' in details && details.occupancy || 1;
     }
 
