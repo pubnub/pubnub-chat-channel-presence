@@ -3,268 +3,326 @@
 ## Live HTML5 WebSockets App with Presence - Open Source MIT
 
 [Live PubNub Presenece App](http://pubnub.s3.amazonaws.com/rally/index.html)
- - SCREENSHOT HERE!!!
- - VIDEO 1
- - VIDEO 2
 
-![PubNub Channel Presence](pubnub-presence-screenshot.png "PubNub Channel Presence")
+ - [Beautiful HTML5 Chat on Mobile and Web using PubNub Channel Presence](http://blog.pubnub.com/html5-websockets-beautiful-real-time-chat-on-mobile-using-pubnubs-channel-presence/)
+ - [Play Video: PubNub Channel Presence – Introduction – As seen on Hacker News](https://vimeo.com/47541092)
+ - [Play Video: PubNub Channel Presence – Introduction](https://vimeo.com/47742118)
+ - [Play Video: PubNub Channel Presence – Code Walkthrough (SHORT)](https://vimeo.com/47740670)
+ - [Play Video: PubNub Channel Presence – Code Walkthrough (FULL)](https://vimeo.com/48053131)
+ - TODO : TODO : [Play Video: PubNub Channel Presence – Presentation]() 
 
-## Presence
+![PubNub Channel Presence](https://s3.amazonaws.com/pubnub/assets/pubnub-real-time-channel-presence-global.png "PubNub Channel Presence")
 
-PubNub is the first Earth Scale infrastructure
-to provide Global User Presence for Channel Connectivity and Occupancy.
-Presence is a new type of framework that never existed before allowing you to
-receive user discovery events on a PubNub <code>channel</code> instantly.
-This enables imperative new capabilities in your app:
-starting with <strong>User Events</strong> such as Join/Leave Status Changes.
-Also channel analytics such as number of users actively receiving
-or waiting to receive data on a <code>channel</code>.
+## Channel Presence
 
-Real-time Web for Mobile Apps and Web Apps is now amazing and
-mega powerful with in the advent of <strong>HTML5 WebSockets</strong>,
-<strong>WebRTC</strong>, PubNub and more.
-Now you can create group chat apps across all platforms.
-Presence is extra useful in combination with PubNub Galaxy.
-PubNub Galaxy provides unlimited scale of users on a signl channel
-enabling you to broadcast information and updates to
-millions or billions of active users.
+Go straight to the [Live Chat App Powered by PubNub Channel Presence]() and
+you can also watch the videos and continue reading about
+PubNub Channel Presence.  The video links are just a bit further down.
+Also you can skip ahead to the code walk-through in this blog to save time if
+you already know about PubNub.
+Otherwise you can learn a lot more by reading through this article.
 
-With PubNub Channel Presence, you can now provide Live Real-time information
-based on the activities of users on your channels.
-You can update timelines to provide a peek into the past
-while providing up to the nanosecond event/activity
-of what is happening <strong>this very moment in time</strong>.
+If you are looking for the full source code, you are in luck!
+This app is Open Source and under the MIT License.
+This means you can do anything you want or need with no obligations to
+the future or past contributors/creators.
+Download the source from our GitHub repository: [Download Source Code](https://github.com/pubnub/pubnub-chat-channel-presence)
 
-PubNub has a new app to share with you, as shown above,
-that is written in featured cross-browser HTML5 and CSS3
-code under the MIT License.
-The App uses
-<a href=https://dev.twitter.com/docs/anywhere/welcome>Twitter @Anywhere</a>
-for authentication and user IDs providing a simple way to join
-the presence experience via group chat and timeline streams.
-You will also be able to see who is online and offline.
-This new and elegant interface gives you quick accessable group functionality with an inviting streamline appearence rendered in HTML5 and CSS3.
-for your Mobile and Web Apps.
+## Videos: HTML5 PubNub Chat Channel Presence Series
 
-## DIY
+PubNub is the first Earth Scale infrastructure to innovate
+Global User Presence.
+Today, PubNub is the only service on the planet that streams Channel
+Connectivity and Occupancy Analytics directly to your consumer devices such
+as iPhones and Android phones and tablets.
+PubNub Presence is a new type of framework that never existed before;
+allowing you to be notified with user discovery events
+on a PubNub channel instantly.
+This enables new capabilities in your app such as User Events with Join/Leave
+Status Changes.
+PubNub Channel Presence in essence become consumable streams of events,
+strait to your device.
+The number of active users connected to a PubNub channel is streamed to
+you automatically as the number of users actively waiting to receive
+data on a channel changes over time.
 
-Without PubNub, there is no reliable and scalable
-solution for connecting your devices via the Real-time Web over
-HTML5 WebSockets and other RT Transports.
-PubNub is the first Earth Scale Real-time Web Enabler and will continue to inovate
-however we are going to discuss a few DIY options to cover the bases.
-There are options available that will get you started
-for low scale DIY capability.
-Note at these low scale options, you will need a budget where as 
-<a href=http://www.pubnub.com/price>
-PubNub offers this to you for free to get started.
-</a>
-Let's cover Two DIY options and ready-made solutions for building
-applications that communicate on the real-time web
-for mobile and tablet apps.
-Socket.IO and APE (AJAX Push Engine)
-The first thing you'll need to do is spin up a web server on
-Amazon AWS EC2 or Rackspace to host your dedicated RT Software.
-Let's say we decided to go with Socket.IO as our DIY broker.
-you'll need to download and compile Node.JS then
-<code>sudo npm install -g socket.io</code>
-or clone the GitHub repository.
-Now you'll need to include Express or another compaitlble
-delivery mechanism for the client payload among other things.
-You might get errors when trying to install Socket.IO globally,
-so refer to this guide for
-<a href=http://stackoverflow.com/questions/9968442/getting-errors-when-trying-to-install-socket-io-globally>
-Getting errors when trying to install socket.io globally
-</a>.
-A hundred or so steps later you'll have a working socket server.
-Now you'll be able to get started with the integartion steps
-to connect your application code.
+The Real-time Web for Mobile Apps and Web Apps is undoubtedly a powerful
+advent following HTML5 WebSockets, WebRTl and more.
+Now with PubNub you can create groups of people and one-to-one apps on all
+platforms easily without having to consider technologies or transports as
+discussed in Are HTML5 WebSockets the Panacea for Real-Time Data Push.
+Channel Presence plays a contending role,
+especially paired with PubNub Galaxy and PubNub Pulse.
+PubNub Galaxy provides unlimited scale of users on a single channel
+(or billions of channels) enabling you to broadcast information and updates
+to unlimited number of active users.
+PubNub Pulse provides fast and efficient one-to-few messaging
+capabilities at a condensed price point.
 
-## DIY Challenges
+With PubNub Channel Presence, you can provide Live Real-time stream of
+information based on the availability of users on your channels.
+You get updated timelines which provide a peek into the past while delivering
+an instant activity stream with details about a PubNub Channel at this very
+moment in time.
 
-It's hard and expenseive despite the ready to use appearence.
-Once you approach various stages of scaling in your app's addoption,
-you will quickly approach the realization of how expensive and
-time consumit it is to run and manage a farm of websocket servers.
-You may say: the open source options are documented to get started with 
-You must understand that it isn't the case that these technologies
-are completely pointless and would never scale.
-It is easy to see that the scaling of these technologies becomes
-very expensive at multiple stages.
-If cost is a concern, and it usually is, just use PubNub day one.
-PubNub is the fastest most powerful Globally Deployed
-Real-time Web Messaging infrastructure available.
-PubNub is optimized at the core written in native C code.
-If reliability is a concern, you simply must remain concerned when
-a DIY solution is your permenant solution.
-Otherwise just use PubNub with the worlds best data reliablity standard
-optimzed for Mobile iPhone and Android devices.
-Message delivery on PubNub is so reliable, that even on network drops
-due to 4G/3G/Edge disconnects, instantly upon reconnect all missed
-messages are automaically delivered.
+Check it out!
+PubNub has a new app to share with you, that is written
+and constructed in cross-browser HTML5
+and CSS3 code under the MIT License.
+The App uses Twitter @Anywhere for authentication and
+the user IDs provide a simple
+way to join the presence experience via group chat and timeline streams.
+You will also be able to see who is online and offline via their
+Twitter Account Name and Account Photo.
+The MIT App provides a new and elegant interface with quick accessible group
+functionality with an inviting streamline appearance rendered in HTML5 and
+CSS3 for your Mobile and Web Apps.
 
-## Real-time Transport and Gateways
+## New Dev Console V2
 
-Next to tell you about the intended use cases for AJAX,
-WebSockets and HTTP BOSH.
-While AJAX and Real-time Transport mechanims are both
-used for the delivery of data,
-each method is useful in its own situation.
-AJAX and Real-time are two different and complementary technologies,
-not mutually exclusive and more often use in combination.
-Real-time enables a new set of functionality.
+![Live PubNub Presenece App](https://s3.amazonaws.com/pubnub/assets/pubnub-dev-console-v2.png)
 
-Where AJAX is a method for Data *Queries* and asking questions,
-Real-time is a method for Data *Communication* and in the case of PubNub:
-bidirectional communication.
-AJAX is not replaced or upgraded by Real-time Data Push.
-You have the ability to combine the two!
-Use AJAX to have your applications ask questions (queries).
-Use PubNub Real-time to directly Push Data to
-one or billions of mobile and web devices.
-
-As you know, many developers have noted here in this thread that teams
-have been working with Real-time technologies for years.
-For Example: Skype and WebEx use Real-time technology like PubNub for chat
-messages and device signaling (making the phone ring).
-And they use AJAX too for Authentication (user login) and Data Save queries
-or logging (such as saving the chat conversation or call log to a database).
-
-You must view AJAX and Real-time as two separate engines;
-both usable in combination.
-Realtime is for PUSH (notify) and AJAX is for QUERY (question).
+As we launch PubNub Channel Presence, we needed to provide a way for you to
+debug and learn about the Presence Event Delivery Format.
+That's why we've created for you a new and improve Developer Console V2 with
+Presence Events built directly into the console interface.
+Now you can easily see the data in JSON format as you build your app.
+As a bonus your app will become an anonymous user and count as a real person
+on your channel to help you debug presence events and occupancy counters.
+Learn more by checkout out the new PubNub Developer Console V2.
+Also you can see a demonstration of the Developer Console V2
+in use in this video: PubNub Channel Presence -
+Code Walk-through video on Vimeo.
 
 ## Real-time Mobile Apps and Web Apps
 
-Getting devices to communicate with each other is practially
-free with PubNub because it is so simple for your team
-to use our simple two function SDK.
-Now that your app is able communicate efficiently,
-you simply need to answer the question:
-"What to do when communication events occur?"
-In most cases you are driving UI - User Interface -
-Updates on a Mobile Phone or Web App.
-Real-time is here and you need to realize the powerful
-capabilites through a user intervace experience.
-Without the interface, it is hard to understand what
-<strong>Real-time Web</strong> really means
-especially in the context of mobile.
+Getting devices to communicate with each other is practially free with PubNub
+because it is so simple for your team to use our two function SDK.
+Yes, you really only need just two functions!
+Now that your app is able communicate efficiently, you simply need to answer
+the question: "What to do when communication occurs?"
+With PubNub you pretty much focus on the User Interaction and in most cases
+you are driving UI - User Interface -Updates on a Mobile Phone or Web App.
 
-The best way to understand Real-time is by ways of an actively animating user interface
+Real-time allows you to strike a visual appeal creating powerful capabilities
+through a user interface experience. Without the interface,
+it is hard to understand what Real-time Web really means,
+especially in the context of mobile.
+The best way to understand Real-time is by producing an actively animating
+user interface, constantly changing and updating in real-time as information
+becomes available.
+This is what PubNub enables.
+Coming up Next is our walkthrough of the new MIT
+open source app we built for you.
 
 ## Walkthrough of How it Works
 
-When something changes someplace on Earth, you want to be notified the very instant this happens.
-A trigger is executed on ....
-Anyone who is interested in being notified that this trigger has been pulled will receive a PubNub message, instantly.
+When something changes someplace on Earth,
+you want to be notified the instant this happens.
+A trigger is invoked and anyone who is interested in the notification
+instantly receives a PubNub message, and this message can be used to update
+an interface or log records or make a phone ring or flicker a blinking light
+or update text on the screen.
 
-You can think of it like this:  interface - update - interface
-in reality it is more like this: interface - your server - 
+A lot can happen and the possibilities are seemingly endless.
+We are going to talk about the app we made and what you can do with it.
 
-## Interface
+## HTML5 and CSS3 Interfaces with Websockets and Real-time Web
 
-You get to understand the ubiquity of HTML5 and CSS3 on Mobile and Web for interface development.
-integrated text input and send button instigate imporoved usablitity experience
-list of users actively online or offiline enable you to know who will receive your notifications and who is currently unavailable.
-primary activity area shows a skype-like chat grouping of messages.
+You get to do some pretty amazing things with PubNub when
+pairing with a User Interface.
+We'll go over the code used to create the free app we provided for you to use
+any way you need.
+You should watch the video: [Play Video: PubNub Channel Presence – Code Walkthrough (SHORT)](https://vimeo.com/47740670)
 
 ## Customizing The Interface
 
-Display styling is located in the <code>default.css</code> CSS3 file.
+Display styling is located in the `default.css` CSS3 file.
 You can modify this file to change the appearance.
+Some notable sections include the background image:
 
-### Mention These Notes
+```css
+#main {
+    z-index: 50;
+    margin: 0;
+    border: 0;
+    padding: 0;
 
- - MIT license
+    position: relative;
+    overflow: hidden;
 
-### Usage Examples and Topics
+    width: 1024px;
+    height: 768px;
 
- - business collaboration starting point
- - Social Interface for Second Screen and Social TV.
- - Live Events
- - Dedicated meetings collaboration
- - Social Music Rooms
- - Team Management.
- - Online Customer Support
- - Classrooms
+    background: #fefef2 url(chat-bg.jpg) no-repeat;
 
-### Keywords
+    color: #ffe;
+    font-size: 15px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+```
 
-HTML5 Websockets 101 -65 - -
-Mobile Chat 28 + 4 - -
-Real Time Data 32 -17 - -
-Real-time Messaging 2 3 -
-Real-time Web 39 + 1 6 - -
-Websocket Server 26 - -
-Websockets Gateway
+This section includes the main background image `url(chat-bg.jpg)`
+that is used to set the tone of the chat experience.
+You may want to modify this to fit your needs.
+The CSS File itself is larger and there is a lot to see.
+Thankfully all design elements and styles in the User Interface considerations
+have been properly abstracted into the CSS file.
 
- - Socket.IO
- - WebSockets
- - Group Chat with Join/Leave
- - Users Online Chat List
- - User List in Chat App
- - WebSockets
- - WebRTC
- - Mobile Chat
- - Real-time web presence
- - Real-time mobile presence
- - objective-c iPad Chat
- - Tablet objective-c iPad iPhone Chat
- - Java Android Chat
- - Live Chat
+## Main Index File
 
-   1.    Group Chat with Join/Leave
-   2.    Users Online Chat List
-   3.    User List in Chat App
-   4.    WebSockets
-   5.    WebRTC
-   6.    Mobile Chat
-   7.    Real-time web presence
-   8.    Real-time mobile presence
-   9.    Tablet iPad Android Chat
-   11.    Live Chat
-   12.    Socket IO
+The `index.html` file will contain information regarding the primary content
+and components pieced together such as the Fonts, CSS and JavaScript.
+The default Twitter user is defined in this file as well
+as all language content.
+You can internationalize this file by updating the english
+words with replacement variables.
 
+## JavaScript Source Code Intro
 
-- DevLink 
-how to creat realtime chat
-how to do large group chat 
+We'll discuss the important aspects to the source code here pertinent
+to PubNub Channel Presence.
+There are two aspects to obtaining Presence Events.
+You can stream presence events as they occur directly to your target device
+with the PubNub Presence Callback located inside the
+PubNub Subscribe Function call.
+You can also invoke a "Here Now" call which returns information about the
+current state.
+Note that the "Here Now" function will give you the full state information of
+the channel where the Presence Callback would only stream new events to your
+mobile app or web app.
 
-- app built already - 
-- talk about the ways this works today - 
-- where do those technologies break ?  socket io ape etc. (breaks here, costs here) - 
-- 
-Real-time Messaging 
-real-time messaging - Build an app live -  
-how to use real-time messaging in the enterprise.
-here is how realtime tech
+## PubNub Channel Presence Callback
 
-real live example of how to build group chat.
-AJAX vs WebSockets vs Long Polling
-Show how build realtime chat with HTML5/CSS3.
+The Presence Callback is located inside the PubNub Subscribe Function as an
+optional paramater.
+When included in the subscribe function, you will automatically receive
+presence events streamed to the specified callback.
+Note that we will be using JavaScript as the language to demonstrate PubNub
+Channel Presence; PubNub Channel Presence is available
+in many other languages.
+This is a sample usage in JavaScript of Channel Presence:
 
+```javascript
+// Open Bidirectional Socket Connection
+PUBNUB.subscribe({
+    channel  : "my_channel", // Channel Name
+    connect  : connect, // OnConnect Callback
+    callback : chat,  // Received Message Callback
+    presence : presence // Presence Callback
+});
+```
 
-focus on title: 
+As you can see the Presence Callback refers to a
+JavaScript Function Reference.
+The event information will pass to you in the following Format when
+a User Joins the Channel:
 
-Abstract
+```javascript
+{
+   "action":"join",
+   "timestamp":1345546797,
+   "uuid":"175c2c67-b2a9-470d-8f4b-1db94f90e39e",
+   "occupancy":2
+}
+```
 
-##### HTML5 WebSockets Real-time Chat on Mobile using PubNub's new Global Presence 
+Next you need to know about the format when a User Leaves a Channel:
 
-You will Learn to build Real-time Messaging for Business Class Apps using the best technologies available.
+```javascript
+{
+   "action":"leave",
+   "timestamp":1345549797,
+   "uuid":"175c2c67-b2a9-470d-8f4b-1db94f90e39e",
+   "occupancy":1
+}
+```
+
+Notice that the occupancy number updates as expected.
+The uuid section is a programmable ID that is associated with each user.
+You can set this to whatever you need it to be in order
+to identify your user.
+When you init the PubNub instance,
+you can set the UUID as an optional paramater.
+The default value is a random UUID.
+
+```javascript
+// Setup Connection Based on User Data
+// This will provide Connectivity References
+var PUBNUB = PUBNUB.init({
+    publish_key   : 'demo',
+    subscribe_key : 'demo',
+    ssl           : false,
+    cipher_key    : '',
+    uuid          : "YOUR UNIQUE USER ID HERE!"
+});
+```
+
+With this example you see that you can set the UUID to anything you need.
+This UUID value will be transmitted on Join/Leave events;
+and also the here_now function.
+
+## PubNub Channel Presence Here Now Function
+
+The PubNub Channel Presence Here Now function provides you the ability
+to answer the question: "Who is here right now?".
+You will receive a list of UUIDs as well as an Occupancy number.
+Here is an example of how to use the Here Now function:
+
+```javascript
+// Get List of Occupants and Occupancy Count.
+function connect() {
+    p.here_now({
+        channel  : channel,
+        callback : presence
+    });
+}
+```
+
+You pass in the channel name and the callback function to be used to send
+the data to.
+The Here Now data response will look like this:
+
+```javascript
+{
+   "uuids":[
+      "UUID1",
+      "UUID2",
+      "UUID3"
+   ],
+   "occupancy":0
+}
+```
+
+As you can see you get a list of UUIDs of your users.
+The UUIDs will either be randomly generated for anonymous users or will be
+the UUIDs you supplied when you initialized the PubNub instance.
+
+And now you know the basics for the PubNub Channel Presence with JavaScript.
+Note that other Language SDKs wil provide similar interfaces with easy
+copy/paste documentation on our GitHub Repository.
+Checkout your source code for the PubNub API GitHub Repository.
+
+Check us out at
+[DevLink this August, 2012](http://devlink.net/Conference/Sessions.aspx)
+where we will talk about PubNub Presence
+and other amazing Real-time solutions:
+
+## Building Real-Time Apps for Mobile and Web
+
+You will Learn to build Real-time Messaging for Business Class Apps using
+the best technologies available.
 Live App under MIT Open Source License will be revealed.
-We will cover DIY options and ready-made solutions for building applications that communicate on the real-time web for mobile and tablet apps.
-You will discover the intended use cases for AJAX, WebSockets and Long Polling as we build an application in this session.
-You get to understand the ubiquity of HTML5 and CSS3 on Mobile and Web for interface development.
-You will leave this session with a cookbook on making interactive applications that communicate using the Best Mobile and Web Technologies Available including PubNub hand HTML5.
-
-
-
-
-
-build the demo - on S3 AND ALSO demo.pubnub.com/something
-Tutorial - Blog - Walkthrough
-Video
-
-
+We will cover DIY options and ready-made solutions for building applications
+that communicate on the real-time web for mobile and tablet apps.
+You will discover the intended use cases for AJAX, WebSockets and
+Long Polling as we build an application in this session.
+You get to understand the ubiquity of HTML5 and CSS3 on Mobile and Web for
+interface development.
+You will leave this session with a cookbook on making interactive
+applications that communicate using the Best Mobile and Web Technologies
+Available including PubNub and HTML5.
 
 
