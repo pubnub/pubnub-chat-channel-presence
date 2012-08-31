@@ -4,7 +4,11 @@
 
 [Live PubNub Presenece App](http://pubnub.s3.amazonaws.com/rally/index.html)
 
- - [Beautiful HTML5 Chat on Mobile and Web using PubNub Channel Presence](http://blog.pubnub.com/html5-websockets-beautiful-real-time-chat-on-mobile-using-pubnubs-channel-presence/)
+Click the link above to try the app live!
+
+## More PubNub Channel Presence Links
+
+ - [Read Blog: Announcing PubNub Channel Presence](http://blog.pubnub.com/announcing-pubnub-channel-presence/)
  - [Play Video: PubNub Channel Presence – Introduction – As seen on Hacker News](https://vimeo.com/47541092)
  - [Play Video: PubNub Channel Presence – Introduction](https://vimeo.com/47742118)
  - [Play Video: PubNub Channel Presence – Code Walkthrough](https://vimeo.com/47740670)
