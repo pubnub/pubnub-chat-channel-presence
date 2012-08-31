@@ -7,9 +7,7 @@
  - [Beautiful HTML5 Chat on Mobile and Web using PubNub Channel Presence](http://blog.pubnub.com/html5-websockets-beautiful-real-time-chat-on-mobile-using-pubnubs-channel-presence/)
  - [Play Video: PubNub Channel Presence – Introduction – As seen on Hacker News](https://vimeo.com/47541092)
  - [Play Video: PubNub Channel Presence – Introduction](https://vimeo.com/47742118)
- - [Play Video: PubNub Channel Presence – Code Walkthrough (SHORT)](https://vimeo.com/47740670)
- - [Play Video: PubNub Channel Presence – Code Walkthrough (FULL)](https://vimeo.com/48053131)
- - TODO : TODO : [Play Video: PubNub Channel Presence – Presentation]() 
+ - [Play Video: PubNub Channel Presence – Code Walkthrough](https://vimeo.com/47740670)
 
 ![PubNub Channel Presence](https://s3.amazonaws.com/pubnub/assets/pubnub-real-time-channel-presence-global.png "PubNub Channel Presence")
 
